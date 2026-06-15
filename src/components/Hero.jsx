@@ -54,7 +54,7 @@ const Hero = () => {
           width: '100%',
           height: '100%',
           objectFit: 'cover',
-          opacity: playing ? 0.55 : 0.15,
+          opacity: playing ? 1 : 0.25,
           transition: 'opacity 0.8s ease',
         }}
       />
@@ -63,7 +63,7 @@ const Hero = () => {
       <div style={{
         position: 'absolute',
         inset: 0,
-        background: 'linear-gradient(135deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0.3) 100%)',
+        background: 'linear-gradient(135deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.25) 60%, rgba(0,0,0,0.15) 100%)',
       }} />
 
       {/* Content */}
