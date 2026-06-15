@@ -105,7 +105,7 @@ const Hero = () => {
           <motion.h1
             {...fadeUp(0.65)}
             style={{
-              fontSize: 'clamp(40px, 6vw, 80px)',
+              fontSize: 'clamp(60px, 9vw, 140px)',
               fontWeight: 900,
               lineHeight: 1.05,
               letterSpacing: '-0.03em',
@@ -117,9 +117,10 @@ const Hero = () => {
             Hi, I'm{' '}
             <br />
             <span style={{
-              WebkitTextStroke: '2px #ffffff',
+              WebkitTextStroke: '3px #ffffff',
               color: 'transparent',
               display: 'inline-block',
+              letterSpacing: '-0.05em',
             }}>
               ABISHAN
             </span>
