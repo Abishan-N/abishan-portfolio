@@ -130,15 +130,15 @@ const Hero = () => {
             {...fadeUp(0.8)}
             style={{
               fontSize: 'clamp(15px, 2vw, 17px)',
-              color: 'rgba(255,255,255,0.7)',
+              color: 'rgba(255,255,255,0.82)',
               lineHeight: 1.7,
-              maxWidth: '480px',
+              maxWidth: '540px',
               marginBottom: '36px',
             }}
           >
             Frontend Developer · Creative Technologist · Video Editor
             <br />
-            Building modern web experiences with React, Node.js & Tailwind CSS.
+            Building modern web experiences with React, JavaScript, Tailwind CSS, and modern UI design.
           </motion.p>
 
           <motion.div
