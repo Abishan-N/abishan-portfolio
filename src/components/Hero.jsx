@@ -56,15 +56,26 @@ const Hero = () => {
         muted
         playsInline
         style={{
-          position: 'absolute',
-          inset: 0,
-          width: '100%',
-          height: '100%',
-          objectFit: 'cover',
-          opacity: playing ? 1 : 0.25,
-          transition: 'opacity 0.8s ease',
-        }}
+            position: 'absolute',
+            inset: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            opacity: playing ? 1 : 0.25,
+            transform: playing ? 'scale(1.08)' : 'scale(1)',
+            transition: 'opacity 0.8s ease, transform 8s ease',
+          }}
       />
+
+      <div
+  style={{
+    position: 'absolute',
+    inset: 0,
+    background:
+      'radial-gradient(circle at 75% 35%, rgba(255,42,42,0.18), transparent 55%)',
+    pointerEvents: 'none',
+  }}
+/>
 
       {/* Dark overlay */}
       <div style={{
@@ -204,8 +215,8 @@ const Hero = () => {
 
         {/* Right — Play Reel */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.7 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, scale: 0.6, rotate: -8 }}
+          animate={{ opacity: 1, scale: 1, rotate: 0 }}
           transition={{ duration: 0.9, ease: [0.34, 1.56, 0.64, 1], delay: 1.0 }}
           style={{ flexShrink: 0 }}
         >
