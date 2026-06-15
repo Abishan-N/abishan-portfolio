@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --red: #FF2A2A;
+  --red-dark: #cc0000;
+  --black: #0a0a0a;
+  --black-footer: #111111;
+  --white: #F4F4F4;
+  --white-pure: #ffffff;
+  --gray: #D4D4D4;
+  --gray-muted: rgba(255,255,255,0.6);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #0a0a0a;
+  color: var(--white);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--red);
+  border-radius: 4px;
+}
+
+::selection {
+  background: var(--red);
+  color: #fff;
+}
+
+/* AOS-like fade animations handled by Framer Motion */
