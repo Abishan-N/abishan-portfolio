@@ -308,21 +308,26 @@ const Hero = () => {
       <style>{`
   @media (max-width: 768px) {
 
-    .scroll-indicator {
-      display: none !important;
-    }
-
-    .hero-content {
-      flex-direction: column !important;
-      justify-content: center !important;
-      text-align: center;
-      padding: 0 20px !important;
-    }
-
-    .play-button-container {
-      margin-top: 30px;
-    }
+  .scroll-indicator {
+    display: none !important;
   }
+
+  .hero-content {
+    flex-direction: column !important;
+    justify-content: center !important;
+    text-align: center;
+    padding: 0 20px !important;
+  }
+
+  .play-button-container {
+    margin-top: 15px;
+  }
+
+  .play-button-container button {
+    width: 90px !important;
+    height: 90px !important;
+  }
+}
 `}</style>
     </section>
   );
