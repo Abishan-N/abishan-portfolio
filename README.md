@@ -17,27 +17,6 @@ npm start        # Development server
 npm run build    # Production build
 ```
 
-## Add your content
-
-### Hero video
-Place your AI-generated introduction video at:
-```
-public/videos/hero-video.mp4
-```
-The video will auto-load. Click the ▶ PLAY REEL button to start/pause it.
-
-### Profile photo
-Place a square profile image at:
-```
-public/images/profile.jpg
-```
-This shows inside the hanging ID card in the About section.
-If the image is missing, a 👨‍💻 emoji placeholder appears automatically.
-
-### Update personal details
-Edit `src/components/Contact.jsx` — replace `abishan@example.com` with your real email.
-Edit `src/components/Footer.jsx` — same email + social links.
-
 ## Sections
 
 | Section | File | Key features |
