@@ -1,9 +1,15 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
   const videoRef = useRef(null);
-  const [playing, setPlaying] = useState(false);
+  const [playing, setPlaying] = useState(true);
+
+  useEffect(() => {
+  if (videoRef.current) {
+    videoRef.current.play().catch(() => {});
+  }
+}, []);
 
   const togglePlay = () => {
     if (!videoRef.current) return;
@@ -45,6 +51,7 @@ const Hero = () => {
       <video
         ref={videoRef}
         src="/videos/hero-video.mp4"
+        autoPlay
         loop
         muted
         playsInline
