@@ -53,7 +53,6 @@ const Hero = () => {
         src="/videos/hero-video.mp4"
         autoPlay
         loop
-        muted
         playsInline
         style={{
             position: 'absolute',
