@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   const videoRef = useRef(null);
-  const [playing, setPlaying] = useState(true);
+  const [playing, setPlaying] = useState(false);
 
   useEffect(() => {
   if (videoRef.current) {
@@ -51,7 +51,6 @@ const Hero = () => {
       <video
         ref={videoRef}
         src="/videos/hero-video.mp4"
-        autoPlay
         loop
         playsInline
         style={{
