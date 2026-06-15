@@ -83,7 +83,9 @@ const Hero = () => {
       }} />
 
       {/* Content */}
-      <div style={{
+      <div 
+        className="hero-content"
+        style={{
         position: 'relative',
         zIndex: 2,
         width: '100%',
@@ -213,8 +215,9 @@ const Hero = () => {
 
         {/* Right — Play Reel */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.6, rotate: -8 }}
-          animate={{ opacity: 1, scale: 1, rotate: 0 }}
+          className="play-button-container"
+          initial={{ opacity: 0, scale: 0.7 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, ease: [0.34, 1.56, 0.64, 1], delay: 1.0 }}
           style={{ flexShrink: 0 }}
         >
@@ -303,10 +306,24 @@ const Hero = () => {
       </motion.button>
 
       <style>{`
-        @media (max-width: 768px) {
-          .scroll-indicator { display: none !important; }
-        }
-      `}</style>
+  @media (max-width: 768px) {
+
+    .scroll-indicator {
+      display: none !important;
+    }
+
+    .hero-content {
+      flex-direction: column !important;
+      justify-content: center !important;
+      text-align: center;
+      padding: 0 20px !important;
+    }
+
+    .play-button-container {
+      margin-top: 30px;
+    }
+  }
+`}</style>
     </section>
   );
 };
